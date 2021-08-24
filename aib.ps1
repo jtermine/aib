@@ -11,7 +11,7 @@ Invoke-Expression -Command 'c:\temp\VScode.exe /verysilent'
 Start-Sleep -Seconds 10
 
 #InstallNotepadplusplus
-Invoke-WebRequest -Uri 'https://notepad-plus-plus.org/repository/7.x/7.7.1/npp.7.7.1.Installer.x64.exe' -OutFile 'c:\temp\notepadplusplus.exe'
+Invoke-WebRequest -Uri 'https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.1.3/npp.8.1.3.Installer.x64.exe' -OutFile 'c:\temp\notepadplusplus.exe'
 Invoke-Expression -Command 'c:\temp\notepadplusplus.exe /S'
 
 #Start sleep
