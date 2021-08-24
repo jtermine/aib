@@ -22,3 +22,9 @@ Invoke-WebRequest -Uri 'https://aka.ms/fslogix_download' -OutFile 'c:\temp\fslog
 Start-Sleep -Seconds 10
 Expand-Archive -Path 'C:\temp\fslogix.zip' -DestinationPath 'C:\temp\fslogix\'  -Force
 Invoke-Expression -Command 'C:\temp\fslogix\x64\Release\FSLogixAppsSetup.exe /install /quiet /norestart'
+
+# Install MS Edge
+winget install -e --id Microsoft.Edge
+
+# Install git
+winget install --id Git.Git -e -source winget
